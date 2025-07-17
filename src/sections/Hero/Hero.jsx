@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./HeroStyles.module.css";
-import heroImg from "../../assets/img.png";
+import heroImg from "../../assets/img2.png";
 import sun from "../../assets/sun.svg";
 import moon from "../../assets/moon.svg";
 import githubLight from "../../assets/github-light.svg";
@@ -14,10 +14,10 @@ import { ThemeProvider, useTheme } from "../../common/ThemeContext";
 function Hero() {
   const { theme, toggleTheme } = useTheme();
 
-  const themeIcon = theme === 'light' ? sun : moon;
-  const githubIcon = theme === 'light' ? githubLight : githubDark;
-  const instagramIcon = theme === 'light' ? instagramLight : instagramDark;
-  const youtubeIcon = theme === 'light' ? youtubeLight : youtubeDark;
+  const themeIcon = theme === "light" ? sun : moon;
+  const githubIcon = theme === "light" ? githubLight : githubDark;
+  const instagramIcon = theme === "light" ? instagramLight : instagramDark;
+  const youtubeIcon = theme === "light" ? youtubeLight : youtubeDark;
 
   return (
     <section id="hero" className={styles.container}>
